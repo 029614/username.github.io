@@ -18,6 +18,7 @@ body {
   border-radius: 15px;
   position: absolute;
   top: 30%;
+  background: linear-gradient(white, lightseagreen);
 }
 
 #restart-quiz{
@@ -25,32 +26,42 @@ body {
   height: 50px;
   font-size: 20px;
   border-radius: 10px;
+  background: linear-gradient(white, lightseagreen);
 }
 
 #quiz-form{
+  flex-shrink: 0;
   position: absolute;
-  top: 10%;
+  width: 100%;
+  top: 0;
   font-size: 30px;
+  background: linear-gradient(white, lightseagreen);
 }
 
 #question {
   margin-bottom: 50px;
   border-bottom: 1px solid black;
+  width: 100%;
 }
 
 #question-wrapper {
   margin-bottom: 20px;
+  margin: 0 auto;
+  width: 200px;
 }
 
-#submit-answer {
+.continue {
   margin-bottom: 50px;
+  margin-top: 30px;
   width: 100px;
   height: 33px;
   font-size: 20px;
   border-radius: 10px;
+  background: linear-gradient(white, lightseagreen);
 }
 
 #scoreboard {
+  width: 100%;
   font-size: 20px;
   border-top: 1px solid black;
 }
@@ -58,6 +69,7 @@ body {
 #final-score {
   margin-top: 20%;
   font-size: 30px;
+  background: linear-gradient(white, lightseagreen);
 }
 
 label {
@@ -77,6 +89,7 @@ label {
 th {
   height: 50px;
   font-size: 30px;
+  background: linear-gradient(white, lightseagreen);
 }
 
 td {
@@ -92,10 +105,23 @@ td {
   background-color: lightgreen;
 }
 
-button {
+#start-quiz:hover, .continue:hover, #restart-quiz:hover{
+  background: none;
+  background-color: white;
+  cursor: pointer;
 }
 
-#start-quiz:hover, #submit-answer:hover, #restart-quiz:hover{
-  background-color: gray;
+label:hover {
+  background-color: white;
   cursor: pointer;
+}
+
+label:active {
+  box-shadow: 3px 4px 5px 6px black;
+}
+
+@media only screen and (max-width: 600px) {
+  #question {
+    font-size: 35px;
+  }
 }
