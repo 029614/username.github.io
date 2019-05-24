@@ -1,33 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>QuizApp</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Sam McClure's Portfolio</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
-    <button id="start-quiz" type="button">Start Quiz</button>
-      <form id="quiz-form" class="hidden">
-        <h2 id="question">Question here?</h2>
-        <main id="question-wrapper">
-        </main>
-        <div id="display-correctness" class='hidden'></div>
-        <input id="submit-answer" class="continue" type="button" value="Submit"></input>
-        <input id="continue-quiz" class="continue hidden" type="button" value="Continue"></input>
-        <footer id="scoreboard">
-          <legend id="progress">Question x of y</legend>
-          <legend id="score"></legend>
-        </footer>
-      </form>
-    <div id="test-end" class="hidden">
-      <h2 id="final-score"></h2>
-      <button id="restart-quiz" class="hidden" type="button">Try Again!</button>
-      <table id="test-review">
-      </table>
-    </div>
-    <script src="questions.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <nav>
+      <img id="logo" src="" alt="Samuel McClure's Logo">
+      <a><i class="fas fa-bars"></i><a>
+    </nav>
+
+    <section id="welcome">
+      <h1>Meet Samuel McClure, that's me!</h1>
+      <img id="portrait" src="" alt="A Picture Of Me!">
+      <p id="bio">Condensed Bio</p>
+      <a href="">More About Sam</a>
+    </section>
+
+    <main>
+
+      <section id="scope">
+        <h2>Looking to crew up?</h2>
+        <p>As a recent graduate from Thinkful's online full stack developer's course, I'm trying to become the newest member of your team.</p>
+
+        <h2>Don't buy used!</h2>
+        <p>I am a new computer. I come installed with the latest industry standards, basic to intermediate skills in nearly everything pertaining to professional web design and development, and none of the poor, or dated practices of times gone.
+      </section>
+
+      <section id="skills">
+        <h2>Programming related Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>JQuery</li>
+          <li>github</li>
+          <li>Node</li>
+          <li>React</li>
+          <li>Postgres</li>
+        </ul>
+      </section>
+
+      <section id="interests">
+        <h2>Programming interests/focuses</h2>
+        <ul>
+          <li>Building web apps</li>
+          <li>Working with API's</li>
+          <li>Debugging (it's weird I know, but I love it!)</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <a href=""><img src="" alt="A picture of a project"></a>
+            <h3>A project!<h3>
+          </li>
+
+          <li>
+            <a href=""><img src="" alt="A picture of a project"></a>
+            <h3>A project!<h3>
+          </li>
+
+          <li>
+            <a href=""><img src="" alt="A picture of a project"></a>
+            <h3>A project!<h3>
+          </li>
+        </ul>
+      </section>
+
+      <section id="work-history">
+        <h2>My journey so far!</h2>
+        <ul>
+          <li id="cabinetry">
+            <h3>Mt Spurr Cabinets: A family business</h3>
+            <img src="" alt="A picture of Mt Spurr Cabinets">
+            <p>Some stuff about my time at Mt Spurr Cabinets</p>
+          </li>
+
+          <li id="fishing">
+            <h3>Catching Nemo</h3>
+            <img src="" alt="A picture of fishing">
+            <p>Some stuff about my time aboard the Charlie B and the Alaska Eagle</p>
+          </li>
+
+          <li id="sailing">
+            <h3>Around the world in 4 years</h3>
+            <img src="" alt="A picture of a ship">
+            <p>A brief summary about my time in the merchant marine</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <h2>Samuel McClure</h2>
+      <a href="">Phone</a>
+      <a href="">Email</a>
+      <a href="">linkedin</a>
+    </footer>
+    
     <script src="script.js"></script>
   </body>
 </html>
